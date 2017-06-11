@@ -56,7 +56,7 @@ double Answer::printQ()
 	//分子
 	const double numer = 2 * pi * this->q.L * (this->q.T1 - this->q.Tb);
 	//分母
-	double denom = 1 / (this->q.r2 * this->q.h2) + (1 / this->q.rambda) * log(this->q.r2 / this->q.r1);
+	double denom = 1 / (this->q.r2 * this->q.h2) + (1 / this->q.lambda) * log(this->q.r2 / this->q.r1);
 
 	double Q = numer / denom;
 	return Q;
